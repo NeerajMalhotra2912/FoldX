@@ -1,0 +1,330 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top section: Image on the left and text centered */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1edd5;
+}
+
+.top-section img {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.top-section h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    margin: 0;
+    color: #FBAE42;
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+.unfold{
+    color: #58595B;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.fold{
+  color: #58595B;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Sub-menu styles */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 150px; /* Adjust as per the requirement */
+}
+
+nav ul li ul li a {
+    padding: 10px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #555;
+}
+/* Nav Css ends here */
+
+.text{
+    position: absolute;
+    bottom: 50%;
+    right: 35%;
+    color: rgb(111, 11, 11);
+    font-size: 50px;
+}
+.text:hover{
+    position: absolute;
+    bottom: 50%;
+    right: 35%;
+    color: rgb(111, 11, 11);
+    font-size: 75px;
+}
+.bgslider{
+    left: auto;
+    text-align: center;
+}
+.carousel-img {
+    height: 500px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image scales while maintaining aspect ratio */
+    margin-bottom: 2rem; /* Adjust as needed, 2rem equals about two rows */
+  }
+  .para1{
+    padding-top: 50px;
+    width: 50%;
+    text-align: justify;
+    font-size: 20px;
+}  
+
+/* About us Section CSS starts from here */
+
+.about-us-section {
+    /* padding: 50px 20px; */
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* Title Styling */
+  .about-us-title {
+    font-size: 3.0rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fbae42; /* Yellow text color */
+    background-color: #58595b; /* Grey background */
+  }
+  
+  /* Flexbox for Content */
+  .about-us-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+  }
+  
+  /* Left Column: Text Section */
+  .about-us-text {
+    flex: 0 0 50%; /* Take up 50% of the container width */
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #555; /* Adjust text color */
+    line-height: 2.5; /* Adjust line height for readability */
+  }
+  
+    /* Read More Button Styling */
+.read-more-btn {
+    display: inline-block; /* Allows it to behave like a button */
+    text-decoration: none; /* Removes underline */
+    margin: 20px auto; /* Centers the button */
+    padding: 10px 20px;
+    background-color: #fbae42; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size */
+    font-family: Arial, sans-serif; /* Button font */
+    text-align: center; /* Centers text inside the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+  
+  /* Hover Effect */
+  .read-more-btn:hover {
+    background-color: #e89d36; /* Darker hover effect */
+  }
+  
+  /* Right Column: Image Section */
+  .about-us-image {
+    flex: 0 0 30%; /* Take up 30% of the container width */
+    text-align: center;
+  }
+  
+  .about-us-image img {
+    max-width: 90%; /* Ensure image fits within the container */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-us-text, .about-us-image {
+      flex: 0 0 100%; /* Full width on smaller screens */
+    }
+    .about-us-text {
+      text-align: center; /* Center align text on smaller screens */
+    }
+  }
+
+  .boldColor{
+    color: #fbae42;
+  }
+
+  /* About Us ends here  */
+
+  /* Vision Mission starts here */
+  
+  /* Read More Button Styling */
+.read-more-btn {
+  display: inline-block; /* Keeps button inline with its content */
+  margin: 20px auto; /* Centers the button horizontally */
+  padding: 10px 20px;
+  background-color: #fbae42; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Removes underline */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center; /* Center align text inside button */
+}
+
+.read-more-btn:hover {
+  background-color: #e89d36; /* Darker hover effect */
+}
+
+/* Section Container */
+.vision-mission-values-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fbae42; /* Yellow text color */
+  background-color: #58595b; /* Grey background */
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Content Container */
+.content-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center;
+  align-items: center; /* Vertically centers content */
+  gap: 20px;
+}
+
+/* Text Content */
+.text-content {
+  flex: 0 0 50%; /* Takes up 50% of the container width */
+  text-align: justify;
+}
+
+.text-content h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #58595b; /* Grey color */
+  font-weight: 600;
+  background-color: #f1edd5;
+}
+.vmvSection{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #58595b; /* Grey color */
+  font-weight: bold;
+  background-color: #f1edd5;
+}
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 2.2;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Centering the Read More Button */
+.text-content .read-more-btn {
+  display: block; /* Makes the button take up the block for centering */
+  width: fit-content; /* Shrinks button width to fit the content */
+  margin: 20px auto; /* Centers button horizontally */
+}
+
+/* Image Content */
+.image-content {
+  flex: 0 0 30%; /* Takes up 30% of the container width */
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%; /* Ensures image fits within the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .text-content, .image-content {
+      flex: 0 0 100%; /* Full width on smaller screens */
+  }
+
+  .text-content h3, .text-content p {
+      text-align: center; /* Center align text on smaller screens */
+  }
+}
+
+  /* Vision Mission starts here */
+
+
+  .expertise-us-text {
+    flex: 0 0 80%; /* Take up 50% of the container width */
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #555; /* Adjust text color */
+    line-height: 2.5; /* Adjust line height for readability */
+  }

@@ -1,0 +1,86 @@
+/* About us Section CSS starts from here */
+
+.about-us-section {
+    background-color: #f9f9f9;
+    padding: 20px 20px; /* Adds spacing around the section */
+  }
+  
+  /* Flexbox for Content */
+  .about-us-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between items */
+  }
+  
+  /* Left Column: Image Section */
+  .about-us-image {
+    flex: 0 0 40%; /* Take up 40% of the container width */
+    text-align: center;
+  }
+  
+  .about-us-image img {
+    max-width: 100%; /* Ensure image fits within the container */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  /* Right Column: Text Section */
+  .about-us-text {
+    flex: 0 0 50%; /* Take up 50% of the container width */
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #555; /* Adjust text color */
+    line-height: 1.8; /* Adjust line height for readability */
+    padding-left: 20px; /* Adds spacing between image and text */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-us-text, .about-us-image {
+      flex: 0 0 100%; /* Full width on smaller screens */
+    }
+    .about-us-text {
+      text-align: center; /* Center align text on smaller screens */
+      padding-left: 0; /* Remove left padding */
+    }
+  }
+  
+  .about-us-paragraph {
+    width: 85%; /* Paragraph spans 80% of the page width */
+    margin: 0 auto; /* Center the paragraph */
+    text-align: justify; /* Justify the text for neat alignment */
+    font-size: 1.2rem; /* Adjust font size */
+    color: #555; /* Adjust text color */
+    line-height: 1.8; /* Adjust line height for readability */
+    padding: 20px 0; /* Add spacing above and below the paragraph */
+  }
+  
+  /* Image Gallery */
+  .image-gallery {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Equal spacing between images */
+    margin-top: 20px; /* Space between paragraph and images */
+  }
+  
+  .image-gallery img {
+    width: calc(30.50% - 20px); /* Divide space equally for 3 images */
+    max-width: 100%; /* Ensure images are responsive */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .image-gallery {
+      flex-wrap: wrap; /* Stack images vertically on smaller screens */
+    }
+    .image-gallery img {
+      width: 100%; /* Full width for small screens */
+    }
+  }
+  .boldColor{
+    color: #fbae42;
+  }
